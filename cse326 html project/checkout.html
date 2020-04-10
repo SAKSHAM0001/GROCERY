@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+
+    <title>Order Confirmation - Grocery Store</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <style type="text/css">
+        /*Basic Layout*/
+        
+        body {
+            background-color: lightgray;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .container {
+            width: 1000px;
+            margin: 10px auto 5px auto;
+            height: 670px;
+            background-color: #fff;
+        }
+        
+        .part_2 {
+            width: 20%;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .part_3 {
+            width: 30%;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .part_4 {
+            width: 40%;
+            overflow: hidden;
+            float: left;
+            background-color: green;
+        }
+        
+        .part_6 {
+            width: 60%;
+            overflow: hidden;
+            float: left;
+            background-color: purple;
+        }
+        
+        .part_7 {
+            width: 70%;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .part_8 {
+            width: 80%;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .part_25 {
+            width: 25%;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .row {
+            margin: 0;
+            padding: 10px;
+            padding-top: 30px;
+        }
+        
+        .header {
+            margin: 0;
+        }
+        /*Navigation*/
+        
+        .nav ul {
+            list-style: none;
+            background-color: #444;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav li {
+            font-size: 1.2em;
+            line-height: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            transition: .3s background-color;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        .nav a:hover {
+            background-color: maroon;
+        }
+        
+        .nav a.active {
+            background-color: lightgray;
+            color: #444;
+            cursor: default;
+        }
+        
+        .nav li {
+            float: left;
+        }
+        
+        .nav ul {
+            overflow: auto;
+            width: 500px;
+            margin: 0 auto;
+        }
+        
+        .nav {
+            background-color: #444;
+            margin-top: 25px;
+        }
+        /*Slider*/
+        
+        #slider {
+            position: relative;
+            overflow: hidden;
+            margin: 5px auto 0 auto;
+            border-radius: 4px;
+        }
+        
+        #slider ul {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 200px;
+            list-style: none;
+        }
+        
+        #slider ul li {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 300px;
+            background: #ccc;
+            text-align: center;
+            line-height: 300px;
+        }
+        
+        a.control_prev,
+        a.control_next {
+            position: absolute;
+            top: 40%;
+            z-index: 999;
+            display: block;
+            padding: 4% 3%;
+            width: auto;
+            height: auto;
+            background: #2a2a2a;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        
+        a.control_prev:hover,
+        a.control_next:hover {
+            opacity: 1;
+            -webkit-transition: all 0.2s ease;
+        }
+        
+        a.control_prev {
+            border-radius: 0 2px 2px 0;
+        }
+        
+        a.control_next {
+            right: 0;
+            border-radius: 2px 0 0 2px;
+        }
+        
+        .slider_option {
+            position: relative;
+            margin: 10px auto;
+            width: 160px;
+            font-size: 18px;
+        }
+        /*General Styling*/
+        
+        .prod_thumb {
+            margin: auto;
+            padding-left: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 5px;
+            border: 4px inset gray;
+            text-align: center;
+        }
+        
+        .prod_thumb span {
+            font-size: 14px;
+        }
+        
+        .button {
+            font: bold 12px;
+            text-decoration: none;
+            background-color: maroon;
+            color: #fff;
+            padding: 10px 6px 10px 6px;
+            border-top: 1px solid #CCCCCC;
+            border-right: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            border-left: 1px solid #CCCCCC;
+        }
+        
+        .button:hover {
+            text-decoration: none;
+            color: #fff;
+            background-color: #4E0000;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        alert("Order Placed Successfully.");
+    });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header" style="height:100px">
+            <div class="part_2">
+                <img src="feed.jpg">
+            </div>
+            <div class="part_8" style="margin:auto;text-align:center;padding-top:20px;">
+                <h1>Smartkart Grocery Store</h1>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+               <li class="home"><a class="active" href="home.html">Home</a></li>
+                <li class="product"><a href="products.html">Products</a></li>
+                <li class="login"><a href="cart.html">cart</a></li>
+                <li class="signup"><a href="signup.html">Sign Up</a></li>
+                <li class="contact"><a href="feedback.html">Feedback</a></li>
+           </ul>
+        </div>
+        <div class="row">
+            <h2 style="text-align:center">Order Confirmation...</h2><br>
+                <table border=1 class="login_form" cellpadding="5" style="margin:auto">
+                <tr>
+                    <td colspan="6" style="text-align:center">Shipping Details</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Shipping Address</td>
+                    <td>City</td>
+                    <td>State</td>
+                    <td>Zip</td>
+                    <td>Contact Number</td>
+                </tr>
+                <tr>
+                    <td>First Last</td>
+                    <td>Address Address</td>
+                    <td>Phagwara</td>
+                    <td>punjab</td>
+                    <td>144401</td>
+                    <td>617 358 8956</td>
+                    </tr>
+            </table><br><br>
+            <form>
+                <table border=1 class="login_form" cellpadding="5" style="margin:auto">
+                    <tr>
+                        <td>Sr. No. </td>
+                        <td>Product Image</td>
+                        <td>Product Description</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total Price</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td style="text-align:center"><img height="50" src="lays.png" </td>
+                            <td>Classic Lays</td>
+                            <td>$4</td>
+                            <td>1</td>
+                            <td>$4</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="5" style="text-align:right">Total</td>
+                        <td>$4</td>
+                       </tr>
+                </table>
+<br>                                  <h3>PROCEED TO CHECKOUT<a href="https://www.instamojo.com/@inovenutre">click here</a>TO PAY</h3>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+  
+}
+
+body{
+	background-image:url(../../FinalProject/Images/back_img.jpg);
+}
+
+#img1{
+   padding-top: 14px;
+   padding-left: 10px;
+}
+
+#img2{
+   padding-top: 45px;
+   float: right;
+}
+
+#gmap{
+ width: 540px;
+ height: 500px;
+ border: 1px ridge #b36614;
+}
+
+@media (max-width: 991px) {
+ #img2{
+   padding-top: 45px;
+   width: 400px;
+   height:120px;
+ }
+}
+
+@media (max-width: 730px) {
+ #img1{
+    padding-left: 0px;
+	padding-top:0px;
+	width:250px;
+  }
+  
+ #img2{
+   width: 250px;
+   height: 40px;
+   padding-top: 0px;
+ }
+  
+}
+
+
+
+@media (max-width: 1200px) {
+ #gmap{
+   width: 480px;
+   height:500px;
+ }
+}
+
+@media (max-width: 991px) {
+ #gmap{
+   width: 370px;
+   height:500px;
+ }
+}
+
+@media (max-width: 420px) {
+ #gmap{
+   width: 250px;
+   height:500px;
+ }
+}
+
+
+
+.container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image:url(../../FinalProject/Images/box_back.jpg);
+  box-shadow: 5px 5px 5px #333;
+  border-left:1px  solid #b36614;
+  border-top:1px solid #b36614;
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+}
+
+.navbar-default,
+.navbar-default-footer,
+.border-style{
+  border: 1px solid #b36614;
+}
+
+.navbar-default-footer {
+  background-color: #ececec;
+  margin-bottom: 20px;
+  height: 160px;
+}
+
+#a1,#a2{
+background-color: #337ab7;
+color: white;
+}
+
+.table-bordered {
+  border: 1px solid #bbb;
+}
+
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #bbb;
+}
+	
+
+#fixed-top{
+  margin-top: 20px;
+  background-color: black;
+  border-color: #e7e7e7;
+  height: 160px;
+  border: 1px ridge #b36614;
+  overflow:hidden;
+}
+
+#fixed-bottom{
+  background-color: black;
+  height: 170px;
+  border: 1px ridge #b36614;
+  overflow:hidden;
+  margin-bottom: 20px;
+}
+
+#form_body{
+ height: 420px;	
+}
+
+#login{
+ width: 80px;	
+}
+
+hr{
+border: 1px inset #622e17;	
+}
+
+.table-responsive
+{
+    overflow-x: auto;
+}
+
+.modal-header{
+  height: 45px;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  background-color: #337ab7;
+  color: white;
+}
+
+.span_pad_left10{
+	padding-left:10px;
+}
+
+.span_pad_left110{
+	padding-left:110px;
+}
+
+.span_pad_left140{
+	padding-left:140px;
+}
+
+.footer_para{
+color:white;
+}
+
+#msg_para{
+ font-size:12px;
+}

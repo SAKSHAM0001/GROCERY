@@ -1,0 +1,190 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:Century Gothic;
+}
+
+
+header{
+   background-color: #474e5d;
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+}
+
+ul{
+  float:right;
+  list-style-type:none;
+}
+
+ul li{
+  display:inline-block;
+}
+
+ul li a{
+  text-decoration:none;
+  color:#fff;
+  padding:5px 2px;
+  border:1px solid #fff;
+  transition:0.6s ease;
+}
+
+ul li a:hover{
+  background-color:#fff;
+  color:#fff;
+}
+
+ul li.active a{
+  background-color:#fff;
+  color:#000;
+}
+
+.logo img{
+  float:left;
+  width:150px;
+  height:auto;
+}
+@media(max-width:768px){
+ul li{
+ text-align:center;
+  inline-block:row;
+height:30px;
+  }
+}
+.apna{
+    
+    font-size: 80px;
+    font-weight:italic;
+    color: white;
+    position: relative;
+    top:25;
+    left: 20%;
+}
+body{
+margin: 0 auto;
+width:100%
+}
+.slider{
+overflow:hidden;
+height:400px;
+
+}
+.slider figure div{
+float:left;
+width:20%;
+}
+.slider figure img{
+width:80%;
+float:left;
+margin-left:140px;
+}
+.slider figure{
+position:relative;
+width:500%;
+margin:0px;
+left:0;
+animation:20s sa infinite;
+}
+@keyframes sa{
+0%{left:0%}
+10%{left:0%}
+12%{left:-100%;}
+22%{left:-100%;}
+24%{left:-200%;}
+34%{left:-200%;}
+36%{left:-200%;}
+46%{left:-300%;}
+48%{left:-300%;}
+58%{left:-400%;}
+60%{left:-400%;}
+70%{left:-300%;}
+72%{left:-300%;}
+82%{left:-200%;}
+84%{left:-200%;}
+94%{left:0%;}
+96%{left:0%;}
+100%{}
+
+}
+
+
+section{
+    height: 100vh;
+    width: 100%;
+  
+    background-position: center;
+    background-size: cover;
+}
+section .sec1{
+  background-color: #474e5d;
+  background-size: cover;
+    background-position: center;
+    height: 110vh;
+    text-align: center;
+    
+
+}
+
+
+section.sec2 .challengetopic{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    font-size: 60px;
+    font-weight: bold;
+    color: tomato;
+
+}
+section.sec2 .challengetopic h4{
+    font-size: 30px;
+    color: whitesmoke;
+}
+section.sec2.content{
+    position: relative;
+    top: 10%;
+    left: 60%;
+}
+section.sec2.content h1{
+    color: tomato;
+    font-size: 50px;
+
+}
+section.sec2.content h2{
+    color: green;
+    font-size: 40px;
+
+}
+section.sec2.content p{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+
+sec3.offertitle{
+    font-size: 80px;
+    color: tomato;
+    position: relative;
+    top: 5;
+    left: 25%;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+footer{
+  padding: 50px;
+ 
+  background-color: #474e5d;
+  color: white;
+}
+
+.contact-details{
+ color:#fff;
+float:left;
+}
+.contact-details li {
+    margin-bottom: 10px;
+}
+.contact-details li a {
+    color: #ffe8bd;
+}

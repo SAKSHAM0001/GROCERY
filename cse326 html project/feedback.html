@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+     
+   
+    <style type="text/css">
+        /*Basic Layout*/
+        
+        body {
+            background-color: lightgray;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .container {
+            width: 1000px;
+            margin: 10px auto 5px auto;
+            height: 630px;
+            background-color: #fff;
+        }
+        
+        .part_2 {
+            width: 20%;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .part_3 {
+            width: 30%;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .part_4 {
+            width: 40%;
+            overflow: hidden;
+            float: left;
+            background-color: green;
+        }
+        
+        .part_6 {
+            width: 60%;
+            overflow: hidden;
+            float: left;
+            background-color: purple;
+        }
+        
+        .part_7 {
+            width: 70%;
+            overflow: hidden;
+            float: left;
+            background-color: green;
+        }
+        
+        .part_8 {
+            width: 80%;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .part_25 {
+            width: 25%;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .row {
+            margin: 0;
+            padding: 10px;
+            padding-top: 30px;
+        }
+        
+        .header {
+            margin: 0;
+        }
+        /*Navigation*/
+        
+        .nav ul {
+            list-style: none;
+            background-color: #444;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav li {
+            font-size: 1.2em;
+            line-height: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            transition: .3s background-color;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        .nav a:hover {
+            background-color: maroon;
+        }
+        
+        .nav a.active {
+            background-color: lightgray;
+            color: #444;
+            cursor: default;
+        }
+        
+        .nav li {
+            float: left;
+        }
+        
+        .nav ul {
+            overflow: auto;
+            width: 500px;
+            margin: 0 auto;
+        }
+        
+        .nav {
+            background-color: #444;
+            margin-top: 25px;
+        }
+        /*Slider*/
+        
+        #slider {
+            position: relative;
+            overflow: hidden;
+            margin: 5px auto 0 auto;
+            border-radius: 4px;
+        }
+        
+        #slider ul {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 200px;
+            list-style: none;
+        }
+        
+        #slider ul li {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 300px;
+            background: #ccc;
+            text-align: center;
+            line-height: 300px;
+        }
+        
+        a.control_prev,
+        a.control_next {
+            position: absolute;
+            top: 40%;
+            z-index: 999;
+            display: block;
+            padding: 4% 3%;
+            width: auto;
+            height: auto;
+            background: #2a2a2a;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        
+        a.control_prev:hover,
+        a.control_next:hover {
+            opacity: 1;
+            -webkit-transition: all 0.2s ease;
+        }
+        
+        a.control_prev {
+            border-radius: 0 2px 2px 0;
+        }
+        
+        a.control_next {
+            right: 0;
+            border-radius: 2px 0 0 2px;
+        }
+        
+        .slider_option {
+            position: relative;
+            margin: 10px auto;
+            width: 160px;
+            font-size: 18px;
+        }
+        /*General Styling*/
+        
+        .prod_thumb {
+            margin: auto;
+            padding-left: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 5px;
+            border: 4px inset gray;
+            text-align: center;
+        }
+        
+        .prod_thumb span {
+            font-size: 14px;
+        }
+        
+        .button {
+            font: bold 12px;
+            text-decoration: none;
+            background-color: maroon;
+            color: #fff;
+            padding: 10px 6px 10px 6px;
+            border-top: 1px solid #CCCCCC;
+            border-right: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            border-left: 1px solid #CCCCCC;
+        }
+        
+        .button:hover {
+            text-decoration: none;
+            color: #fff;
+            background-color: #4E0000;
+        }
+        
+        .login_form td {
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+        
+        .login_form input[type=text],
+        .login_form input[type=password],.login_form textarea {
+            border: 2px solid rosybrown;
+            height: 31px;
+            width: 223px;
+            box-shadow: 0px 0px 27px rgb(204, 204, 204) inset;
+            transition: 500ms all ease;
+            padding: 3px 3px 3px 3px;
+        }
+        
+        .login_form input[type=text]:hover,
+        .login_form input[type=password]:hover,
+        .login_form input[type=text]:focus,.login_form input[type=password]:focus,.login_form textarea:focus,.login_form textarea:hover {
+            width: 260px;
+            transition: 500ms all ease;
+            background: url(msg.png) no-repeat right;
+            background-size: 25px 25px;
+            background-position: 96% 62%;
+            padding: 3px 32px 3px 3px;
+        }
+    </style>
+  
+</head>
+
+<body>
+    <div class="container">
+        <div class="header" style="height:100px">
+            <div class="part_2">
+                <img src="feed.jpg">
+            </div>
+            <div class="part_8" style="margin:auto;text-align:center;padding-top:20px;">
+                <h1>Welcome to Smartkart Grocery Store</h1>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="home"><a href="home.html">Home</a></li>
+                <li class="product"><a href="products.html">Products</a></li>
+                <li class="login"><a href="cart.html">cart</a></li>
+                <li class="signup"><a href="signup.html">Sign Up</a></li>
+                <li class="contact"><a class="active" href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <h2 style="text-align:center">Please Send us Your Feedback...</h2><br>
+            <form>
+                <table class="login_form" style="margin:auto">
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" placeholder="Enter First Name"></td>
+                        <td>Last Name</td>
+                        <td><input type="text" placeholder="Enter Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email Address</td>
+                        <td><input type="text" placeholder="Enter Email Address"></td>
+                        <td>Contact Number</td>
+                        <td><input type="text" placeholder="Enter Contact Number"></td>
+                    </tr>
+                    <tr>
+                        <td>Comments</td>
+                        <td colspan="3"><textarea style="width:600px;height:50px;" placeholder="Enter Address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="margin:auto;padding-left:370px;">
+<button onclick="a()"input style="font-size:0.9em" class="button" type="submit">Submit</button>
+<script type="text/javascript">
+function a()
+{
+alert("thanks for your feedback")
+}
+</script>
+                       </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <br>
+        </div>
+</body>
+
+</html>

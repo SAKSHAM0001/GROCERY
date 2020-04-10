@@ -1,0 +1,67 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:Century Gothic;
+}
+
+.some-offer{
+font-size: 40px;
+    font-weight: italic;
+    color:green;
+    position: relative;
+    top:15;
+    left: 30%;
+}
+header{
+
+}
+
+ul{
+  float:right;
+  list-style-type:none;
+  margin-top: 25px;
+}
+
+ul li{
+  display:inline-block;
+}
+
+ul li a{
+  text-decoration:none;
+  color:#000;
+  padding:5px 2px;
+  border:1px solid #000;
+  transition:0.6s ease;
+}
+
+ul li a:hover{
+  background-color:#00AAF4;
+  color:#000;
+}
+
+ul li.active a{
+  background-color:#00AAF4;
+  color:#000;
+}
+.logo img{
+  float:left;
+  width:150px;
+  height:auto;
+}
+footer{
+  padding: 50px;
+ 
+  background-color: #474e5d;
+  color: white;
+}
+
+.contact-details{
+ color:#fff;
+float:left;
+}
+.contact-details li {
+    margin-bottom: 10px;
+}
+.contact-details li a {
+    color: #ffe8bd;
+}
